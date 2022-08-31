@@ -1,0 +1,22 @@
+<div class="register-user-container">
+  <input
+    type="text"
+    name="name"
+    id="name-register"
+    [(ngModel)]="newUser.name"
+  />
+  <input
+    type="text"
+    name="email"
+    id="email-register"
+    [(ngModel)]="newUser.email"
+  />
+  <input
+    type="password"
+    name="password"
+    id="password-register"
+    [(ngModel)]="newUser.password"
+  />
+  <button (click)="onRegister()">Register</button>
+  <button routerLink="homepage">Homepage</button>
+</div>

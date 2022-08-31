@@ -1,0 +1,11 @@
+<div class="login-cred-container">
+  <input type="text" name="email" id="email-login" [ngModel]="user.name" />
+  <input
+    type="password"
+    name="password"
+    id="password-login"
+    [ngModel]="user.password"
+  />
+  <button type="submit" (submit)="onLogin(user)">Login</button>
+  <button routerLink="homepage">Homepage</button>
+</div>
